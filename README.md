@@ -1,6 +1,6 @@
 # HuaweiCLI
 
-Proyek ini adalah implementasi API huaweu untuk berkomunikasi dengan modem Huawei menggunakan bahasa Python. Proyek ini diadaptasi dari [huawei-lte](https://github.com/octave21/huawei-lte).
+Proyek ini adalah implementasi library api huawei untuk berkomunikasi dengan modem Huawei B818 menggunakan bahasa python. Proyek ini diadaptasi dari [huawei-lte](https://github.com/octave21/huawei-lte).
 
 ## Petunjuk Instalasi
 
