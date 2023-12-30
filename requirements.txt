@@ -1,1 +1,3 @@
+windows-curses
+requests
 huawei-lte-api

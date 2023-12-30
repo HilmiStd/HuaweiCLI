@@ -129,6 +129,7 @@ while True:
                       time.sleep(1)
                   curses.endwin()
           # Main program
+          os.system('cls')
           stop = False
           iPing = -1
           timePing = 0
@@ -152,8 +153,10 @@ while True:
               ('b41', 'TDD', '2500', '10000000000'),
               ('b42', 'TDD', '3500', '20000000000'),
           ]
-          
-          with open("config.json", "r") as config_file:
+
+          script_dir = os.path.dirname(os.path.realpath(__file__))
+          config_path = os.path.join(script_dir, "config.json")
+          with open(config_path, "r") as config_file:
               config_data = json.load(config_file)
 
           ip = config_data["ip"]
@@ -163,6 +166,7 @@ while True:
           band = -1
           keyboardThread = Keyboard() 
           statThread = Stat()
+          pingThread = Ping()
           
           pil = input("═════════════════════\n        MENU         \n═════════════════════\n0. Check Network Status\n1. Band 1 (2100)\n2. Band 3 (1800)\n3. Band 8 (900)\n4. Band 1 (2100) + Band 3 (1800)\n5. Band 3 (1800) + Band 8 (900)\n6. Band 1 (2100) + Band 3 (1800) + Band 8 (900)\nq. Exit\n═════════════════════\nMasukkan Pilihan : ")
           with Connection('http://admin:indonesia@192.168.8.1/') as connection:
@@ -199,14 +203,13 @@ while True:
                 print("SUCCESS CHANGE TO Band 3 (1800) + Band 8 (900)")
             elif pil == '0':
                 try:
-                    pingThread = Ping()
                     pingThread.start()
                     keyboardThread.start()
                     statThread.start()
                     keyboardThread.join()
                     statThread.join()
                 except Exception as e :
-                    system('cls')
+                    os.system('cls')
                     print(e)
                     stop = True
                     keyboardThread.join()
@@ -214,4 +217,5 @@ while True:
             elif pil.lower() == 'q':
                 os.system('cls')
                 break
-            os.system('cls')
+            else:
+                os.system('cls')
