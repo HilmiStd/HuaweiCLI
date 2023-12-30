@@ -1,6 +1,6 @@
 # HuaweiCLI
 
-Proyek ini adalah implementasi API untuk berkomunikasi dengan modem Huawei LTE menggunakan Python. Proyek ini diadaptasi dari [huawei-lte](https://github.com/octave21/huawei-lte).
+Proyek ini adalah implementasi API huaweu untuk berkomunikasi dengan modem Huawei menggunakan bahasa Python. Proyek ini diadaptasi dari [huawei-lte](https://github.com/octave21/huawei-lte).
 
 ## Petunjuk Instalasi
 
@@ -11,7 +11,7 @@ Proyek ini adalah implementasi API untuk berkomunikasi dengan modem Huawei LTE m
     ```bash
     git clone https://github.com/NamaAnda/huawei-lte-api.git
     ```
-3. Anda dapat mengonfigurasi opsi "Menu Band" di file `config.py`. Ganti nilai variabel `ip` dan `password` sesuai konfigurasi modem anda.
+3. Anda dapat membuka file `config.py`. Ganti nilai variabel `ip` dan `password` sesuai konfigurasi modem anda.
 
 4. Masuk ke direktori proyek:
 
