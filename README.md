@@ -1,5 +1,6 @@
 # HuaweiCLI
-![image](https://github.com/HilmiStd/HuaweiCLI/assets/147703897/9a10cfd5-e3b8-4878-8d9d-2cd90ce8e9ae) <br>
+![image](https://github.com/HilmiStd/HuaweiCLI/assets/147703897/30e80812-61fd-467d-b7fe-f3e4726965d6)
+<br>
 Proyek ini adalah implementasi [huawei-lte-api](https://github.com/Salamek/huawei-lte-api) untuk berkomunikasi dengan modem Huawei B818-263. Proyek ini diadaptasi dari [huawei-lte](https://github.com/octave21/huawei-lte).
 
 ## Petunjuk Instalasi
